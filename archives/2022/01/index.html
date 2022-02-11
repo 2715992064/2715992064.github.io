@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="归档: 2021/12, ZZULIOJ blogs">
+    <meta name="keywords" content="归档: 2022/1, ZZULIOJ blogs">
     <meta name="description" content="编程小白的记录，来看看吧~">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>归档: 2021/12 | 爱吃香菜</title>
+    <title>归档: 2022/1 | 爱吃香菜</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -454,7 +454,7 @@
             
             
             <div class="cd-timeline-img year" data-aos="zoom-in-up">
-                <a href="/archives/2021">2021</a>
+                <a href="/archives/2022">2022</a>
             </div>
             
 
@@ -462,36 +462,37 @@
             
             
             <div class="cd-timeline-img month" data-aos="zoom-in-up">
-                <a href="/archives/2021/12">12</a>
+                <a href="/archives/2022/01">01</a>
             </div>
             
 
             
             <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>24</span>
+                <span>05</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2021/12/24/tuo-bu-pai-xu/">
+                        <a href="/2022/01/05/shu-zhuang-dp/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="拓扑排序">
+                                <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="树形DP">
                                 
-                                <span class="card-title">拓扑排序</span>
+                                <span class="card-title">树形DP</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    拓扑排序什么是拓扑排序？若一个由图中所有点构成的序列A没满足：对于图中的每条边(x,y)，x在A中都出现在y之前，则称A是该图中的一个拓扑排序。只适用于有向无环图（AOV网）。
-入度想要找到拓扑排序，我们要了解入度的概念：指有向图中某点作为
+                                    树形DP状态表示：
+树形DP的状态集合有两个f[u, 0]和f[u, 1]，分别表示所有从以u为根的子树中选择，且不选u这个点的方案，和选这个点的方案。
+首先对于f[u, 0]，因为它没有选择u这个点，因此子节点自由选择，可以由f[j , 
                                 
                             </div>
                             <div class="publish-info">
                                 <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2021-12-24
+                                    <i class="far fa-clock fa-fw icon-date"></i>2022-01-05
                                 </span>
                                 <span class="publish-author">
                                     
@@ -528,85 +529,31 @@
 
             
             <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>17</span>
+                <span>05</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2021/12/17/dos-ming-ling/">
+                        <a href="/2022/01/05/zhuang-tai-ya-suo-dp/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="DOS命令">
+                                <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="状态压缩DP">
                                 
-                                <span class="card-title">DOS命令</span>
+                                <span class="card-title">状态压缩DP</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    DOS命令cd 目录名  进入特定的目录
-cd\ 退回根目录
-cd .. 退回上一级
-dir 显示目录文件和子目录列表。
-md 目录名 在该目录下新建文件夹
-rd 目录名 删除特定文件夹
-del 文件名 删除特定文件
-del ***.** 
+                                    状态压缩DP状态压缩本质上就是用一个二进制数来表示出所有的状态，从而方便用位运算节省速度。
+蒙德里安的梦想要找到所有的方案数，我们需要找到所有横放1x2方格的合法方案数，当横放数量确定后，竖放的方格只需插入即可。
+状态表示：用f[i] [j
                                 
                             </div>
                             <div class="publish-info">
                                 <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2021-12-17
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-user fa-fw"></i>
-                                    Cedeat
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>16</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2021/12/16/bfs/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="宽度优先搜索">
-                                
-                                <span class="card-title">宽度优先搜索</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    BFS（宽度优先搜索）宽度优先搜索最大的优势是可以搜索到最短路，然而在空间上要比DFS上大一些。BFS是一层一层向外搜索，先搜索所有距离为1的点，再搜索所有距离为2的点，以此类推，所以搜到的点是逐渐离我们越来越远的，找到的第一个即为最小，前
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
+                                    <i class="far fa-clock fa-fw icon-date"></i>2022-01-05
                                 </span>
                                 <span class="publish-author">
                                     
@@ -643,34 +590,281 @@ del ***.**
 
             
             <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>14</span>
+                <span>05</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2021/12/14/bing-cha-ji/">
+                        <a href="/2022/01/05/ji-yi-hua-sou-suo/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="并查集">
+                                <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="记忆化搜索">
                                 
-                                <span class="card-title">并查集</span>
+                                <span class="card-title">记忆化搜索</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    并查集并查集的作用1.进行集合合并。😄
-2.查询两个元素是否处于同一集合。
-并查集的原理用树的形式维护所有的集合
-每个集合用一颗树来标志。树的编号就是整个集合的编号。每个节点储存的是他的父节点，p[x]表示x的父节点。
-例：
-对于一个元素
+                                    记忆化搜索记忆化搜索有点像搜索+初始化判断，通过保存过去的结果，可以避免重复的搜索，以此达到更快的时间。
+f[a] [b]表示走到a，b这一点的最大距离，因此f[a] [b]如果不为初始化的值，则一定是最大值，我们不必再重复搜索
+#incl
                                 
                             </div>
                             <div class="publish-info">
                                 <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2021-12-14
+                                    <i class="far fa-clock fa-fw icon-date"></i>2022-01-05
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/categories/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/" class="post-category">
+                                    算法入门
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/%E7%AE%97%E6%B3%95/"><span class="chip bg-color">算法</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>04</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/2022/01/04/shu-wei-dp/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="数位DP">
+                                
+                                <span class="card-title">数位DP</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                    数位DP感觉是一种出现很多次的题然而我一次都不会（（
+数位DP的核心是分情况讨论，找到一个第j位，表示第j位上数字i出现了多少次，最后将每个位数上数字i的出现次数相加即是总和。
+对于一个数abcdefg，假定第j位是d，那么有如下可能：
+（
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i class="far fa-clock fa-fw icon-date"></i>2022-01-04
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/categories/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/" class="post-category">
+                                    算法入门
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/%E7%AE%97%E6%B3%95/"><span class="chip bg-color">算法</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>04</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/2022/01/04/bei-bao-wen-ti/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="背包问题">
+                                
+                                <span class="card-title">背包问题</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                    背包问题背包问题是一类很大的问题，很多问题都能转化成背包问题。
+01背包01背包问题的特点是所有物品仅能用一次
+状态转移方程
+f[i][j] = max(f[i][j], f[i - 1][j - v[i]] + w[i]);
+
+
+
+二维版
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i class="far fa-clock fa-fw icon-date"></i>2022-01-04
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/categories/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/" class="post-category">
+                                    算法入门
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/%E7%AE%97%E6%B3%95/"><span class="chip bg-color">算法</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>04</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/2022/01/04/ji-shu-lei-dp/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="计数DP">
+                                
+                                <span class="card-title">计数DP</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                    计数类DP整数划分可看作是完全背包问题的改版，将1~n的数看作体积，每个物品使用无限次，恰好能装满背包体积n的总方案数。
+注意初始化时，我们要求的与完全背包不同，完全背包要求最大的价值，该题要求最大的方案数，因此我们至少有一种方案，应该全部
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i class="far fa-clock fa-fw icon-date"></i>2022-01-04
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/categories/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/" class="post-category">
+                                    算法入门
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/%E7%AE%97%E6%B3%95/"><span class="chip bg-color">算法</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>03</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/2022/01/03/qu-jian-dp/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="区间DP">
+                                
+                                <span class="card-title">区间DP</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                    区间DP区间DP的核心是每次都将左边一堆与右边连续的一堆合并
+状态表示：f[i] [j]表示将i到j合并为一堆的方案的集合的最小值。
+状态计算：
+f[i][j] = min(f[i][j], f[i][k] + f[k + 1][j] + 
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i class="far fa-clock fa-fw icon-date"></i>2022-01-03
                                 </span>
                                 <span class="publish-author">
                                     
