@@ -22,6 +22,8 @@
             
             <tag> 算法 </tag>
             
+            <tag> 图论/搜索 </tag>
+            
         </tags>
       
     </entry>
@@ -46,6 +48,8 @@
         <tags>
             
             <tag> 算法 </tag>
+            
+            <tag> 数据结构 </tag>
             
         </tags>
       
@@ -72,6 +76,8 @@
             
             <tag> 算法 </tag>
             
+            <tag> 图论/搜索 </tag>
+            
         </tags>
       
     </entry>
@@ -96,6 +102,8 @@
         <tags>
             
             <tag> 算法 </tag>
+            
+            <tag> 数据结构 </tag>
             
         </tags>
       
@@ -122,6 +130,8 @@
             
             <tag> 算法 </tag>
             
+            <tag> 图论/搜索 </tag>
+            
         </tags>
       
     </entry>
@@ -146,6 +156,8 @@
         <tags>
             
             <tag> 算法 </tag>
+            
+            <tag> 图论/搜索 </tag>
             
         </tags>
       
@@ -197,6 +209,8 @@
             
             <tag> 算法 </tag>
             
+            <tag> 动态规划 </tag>
+            
         </tags>
       
     </entry>
@@ -221,6 +235,8 @@
         <tags>
             
             <tag> 算法 </tag>
+            
+            <tag> 数论 </tag>
             
         </tags>
       
@@ -247,6 +263,8 @@
             
             <tag> 算法 </tag>
             
+            <tag> 数据结构 </tag>
+            
         </tags>
       
     </entry>
@@ -271,6 +289,8 @@
         <tags>
             
             <tag> 算法 </tag>
+            
+            <tag> 数论 </tag>
             
         </tags>
       
@@ -297,6 +317,8 @@
             
             <tag> 算法 </tag>
             
+            <tag> 动态规划 </tag>
+            
         </tags>
       
     </entry>
@@ -321,6 +343,8 @@
         <tags>
             
             <tag> 算法 </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
@@ -347,6 +371,8 @@
             
             <tag> 算法 </tag>
             
+            <tag> 动态规划 </tag>
+            
         </tags>
       
     </entry>
@@ -371,6 +397,8 @@
         <tags>
             
             <tag> 算法 </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
@@ -397,6 +425,8 @@
             
             <tag> 算法 </tag>
             
+            <tag> 动态规划 </tag>
+            
         </tags>
       
     </entry>
@@ -421,6 +451,8 @@
         <tags>
             
             <tag> 算法 </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
@@ -447,6 +479,8 @@
             
             <tag> 算法 </tag>
             
+            <tag> 动态规划 </tag>
+            
         </tags>
       
     </entry>
@@ -472,6 +506,8 @@
             
             <tag> 算法 </tag>
             
+            <tag> 图论/搜索 </tag>
+            
         </tags>
       
     </entry>
@@ -486,6 +522,12 @@
         <content type="html"><![CDATA[<h1 id="DOS命令"><a href="#DOS命令" class="headerlink" title="DOS命令"></a>DOS命令</h1><p>cd 目录名  进入特定的目录</p><p>cd\ 退回根目录</p><p>cd .. 退回上一级</p><p>dir 显示目录文件和子目录列表。</p><p>md 目录名 在该目录下新建文件夹</p><p>rd 目录名 删除特定<strong>文件夹</strong></p><p>del 文件名 删除特定<strong>文件</strong></p><p>del ***.** *删除文件夹下所有文件</p><p>del *xxx 删除文件名中含xxx的文件</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 其它 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -510,6 +552,8 @@
             
             <tag> 算法 </tag>
             
+            <tag> 图论/搜索 </tag>
+            
         </tags>
       
     </entry>
@@ -521,7 +565,7 @@
       <link href="/2021/12/14/bing-cha-ji/"/>
       <url>/2021/12/14/bing-cha-ji/</url>
       
-        <content type="html"><![CDATA[<h1 id="并查集"><a href="#并查集" class="headerlink" title="并查集"></a>并查集</h1><h2 id="并查集的作用"><a href="#并查集的作用" class="headerlink" title="并查集的作用"></a>并查集的作用</h2><p>1.进行集合合并。<span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p><p>2.查询两个元素是否处于同一集合。</p><h2 id="并查集的原理"><a href="#并查集的原理" class="headerlink" title="并查集的原理"></a>并查集的原理</h2><p>用树的形式维护所有的集合</p><p>每个集合用一颗树来标志。树的编号就是整个集合的编号。每个节点储存的是他的父节点，p[x]表示x的父节点。</p><p>例：</p><p>对于一个元素3，若p[3] = 5，则表示3属于编号为5的这个集合当中。</p><h2 id="并查集的实现方式（基础操作）"><a href="#并查集的实现方式（基础操作）" class="headerlink" title="并查集的实现方式（基础操作）"></a>并查集的实现方式（基础操作）</h2><h3 id="1-如何判断树根"><a href="#1-如何判断树根" class="headerlink" title="1.如何判断树根"></a>1.如何判断树根</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">if</span> <span class="token punctuation">(</span>p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">==</span> x<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="2-如何求x的集合编号"><a href="#2-如何求x的集合编号" class="headerlink" title="2.如何求x的集合编号"></a>2.如何求x的集合编号</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">while</span> <span class="token punctuation">(</span>p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">!=</span> x<span class="token punctuation">)</span> x <span class="token operator">=</span> p<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>每次找节点试都要重新往上找一边，时间复杂度很高，可以进行路线压缩优化。</p><p>路线压缩：即找到集合的根节点后，令集合的所有元素指向根结点，以便进行下次查找。</p><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">find</span> <span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token comment">// 返回x的集合编号（祖宗节点） + 路径压缩</span><span class="token punctuation">{</span><span class="token keyword">if</span>  <span class="token punctuation">(</span>p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">!=</span> x<span class="token punctuation">)</span> p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>p<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">return</span> p<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">// 递归方法实现，只有p[x] == x时，即x为祖宗节点时才会返回，令调用过程中所有的p[x]都等于祖宗节点的值。</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="3-如何合并两个集合"><a href="#3-如何合并两个集合" class="headerlink" title="3.如何合并两个集合"></a>3.如何合并两个集合</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> y<span class="token punctuation">;</span><span class="token comment">//p[x]为x的集合编号，p[y]为y的集合编号。</span>p<span class="token punctuation">[</span><span class="token function">find</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token operator">||</span> p<span class="token punctuation">[</span><span class="token function">find</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> p<span class="token punctuation">[</span><span class="token function">find</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token comment">// 因为find(b)即祖宗节点，所以p[find(b)] == find(b)，两者含义相同。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span><span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span><span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">100010</span><span class="token punctuation">;</span><span class="token keyword">int</span> p<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">int</span> <span class="token function">find</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token keyword">if</span> <span class="token punctuation">(</span>p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">!=</span> x<span class="token punctuation">)</span> p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>p<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">return</span> p<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">;</span>    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>n<span class="token punctuation">,</span> <span class="token operator">&amp;</span>m<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i <span class="token operator">++</span> <span class="token punctuation">)</span> p<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>    <span class="token keyword">while</span> <span class="token punctuation">(</span>m <span class="token operator">--</span> <span class="token punctuation">)</span>    <span class="token punctuation">{</span>        <span class="token keyword">char</span> op<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>        <span class="token keyword">int</span> a<span class="token punctuation">,</span> b<span class="token punctuation">;</span>        <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%s%d%d"</span><span class="token punctuation">,</span> op<span class="token punctuation">,</span> <span class="token operator">&amp;</span>a<span class="token punctuation">,</span> <span class="token operator">&amp;</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">*</span>op <span class="token operator">==</span> <span class="token string">'M'</span><span class="token punctuation">)</span> p<span class="token punctuation">[</span><span class="token function">find</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">else</span>        <span class="token punctuation">{</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">find</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token function">find</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">puts</span><span class="token punctuation">(</span><span class="token string">"Yes"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token keyword">else</span> <span class="token function">puts</span><span class="token punctuation">(</span><span class="token string">"No"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>    <span class="token punctuation">}</span>    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+        <content type="html"><![CDATA[<h1 id="并查集"><a href="#并查集" class="headerlink" title="并查集"></a>并查集</h1><h2 id="并查集的作用"><a href="#并查集的作用" class="headerlink" title="并查集的作用"></a>并查集的作用</h2><p>1.进行集合合并。</p><p>2.查询两个元素是否处于同一集合。</p><h2 id="并查集的原理"><a href="#并查集的原理" class="headerlink" title="并查集的原理"></a>并查集的原理</h2><p>用树的形式维护所有的集合</p><p>每个集合用一颗树来标志。树的编号就是整个集合的编号。每个节点储存的是他的父节点，p[x]表示x的父节点。</p><p>例：</p><p>对于一个元素3，若p[3] = 5，则表示3属于编号为5的这个集合当中。</p><h2 id="并查集的实现方式（基础操作）"><a href="#并查集的实现方式（基础操作）" class="headerlink" title="并查集的实现方式（基础操作）"></a>并查集的实现方式（基础操作）</h2><h3 id="1-如何判断树根"><a href="#1-如何判断树根" class="headerlink" title="1.如何判断树根"></a>1.如何判断树根</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">if</span> <span class="token punctuation">(</span>p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">==</span> x<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="2-如何求x的集合编号"><a href="#2-如何求x的集合编号" class="headerlink" title="2.如何求x的集合编号"></a>2.如何求x的集合编号</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">while</span> <span class="token punctuation">(</span>p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">!=</span> x<span class="token punctuation">)</span> x <span class="token operator">=</span> p<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>每次找节点试都要重新往上找一边，时间复杂度很高，可以进行路线压缩优化。</p><p>路线压缩：即找到集合的根节点后，令集合的所有元素指向根结点，以便进行下次查找。</p><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">find</span> <span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token comment">// 返回x的集合编号（祖宗节点） + 路径压缩</span><span class="token punctuation">{</span><span class="token keyword">if</span>  <span class="token punctuation">(</span>p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">!=</span> x<span class="token punctuation">)</span> p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>p<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">return</span> p<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">// 递归方法实现，只有p[x] == x时，即x为祖宗节点时才会返回，令调用过程中所有的p[x]都等于祖宗节点的值。</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="3-如何合并两个集合"><a href="#3-如何合并两个集合" class="headerlink" title="3.如何合并两个集合"></a>3.如何合并两个集合</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> y<span class="token punctuation">;</span><span class="token comment">//p[x]为x的集合编号，p[y]为y的集合编号。</span>p<span class="token punctuation">[</span><span class="token function">find</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token operator">||</span> p<span class="token punctuation">[</span><span class="token function">find</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> p<span class="token punctuation">[</span><span class="token function">find</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token comment">// 因为find(b)即祖宗节点，所以p[find(b)] == find(b)，两者含义相同。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span><span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span><span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">100010</span><span class="token punctuation">;</span><span class="token keyword">int</span> p<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">int</span> <span class="token function">find</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token keyword">if</span> <span class="token punctuation">(</span>p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">!=</span> x<span class="token punctuation">)</span> p<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>p<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">return</span> p<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">;</span>    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>n<span class="token punctuation">,</span> <span class="token operator">&amp;</span>m<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i <span class="token operator">++</span> <span class="token punctuation">)</span> p<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>    <span class="token keyword">while</span> <span class="token punctuation">(</span>m <span class="token operator">--</span> <span class="token punctuation">)</span>    <span class="token punctuation">{</span>        <span class="token keyword">char</span> op<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>        <span class="token keyword">int</span> a<span class="token punctuation">,</span> b<span class="token punctuation">;</span>        <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%s%d%d"</span><span class="token punctuation">,</span> op<span class="token punctuation">,</span> <span class="token operator">&amp;</span>a<span class="token punctuation">,</span> <span class="token operator">&amp;</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">*</span>op <span class="token operator">==</span> <span class="token string">'M'</span><span class="token punctuation">)</span> p<span class="token punctuation">[</span><span class="token function">find</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">else</span>        <span class="token punctuation">{</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">find</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token function">find</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">puts</span><span class="token punctuation">(</span><span class="token string">"Yes"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token keyword">else</span> <span class="token function">puts</span><span class="token punctuation">(</span><span class="token string">"No"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>    <span class="token punctuation">}</span>    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
       
       
       <categories>
@@ -534,6 +578,8 @@
         <tags>
             
             <tag> 算法 </tag>
+            
+            <tag> 数据结构 </tag>
             
         </tags>
       
@@ -556,9 +602,9 @@
     
     
     <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -567,9 +613,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
