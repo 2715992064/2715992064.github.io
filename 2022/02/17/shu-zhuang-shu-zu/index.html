@@ -479,21 +479,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-02-17
+                    2022-02-18
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    1.8k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    8 分
                 </div>
                 
 
@@ -532,17 +532,17 @@
 
 
 
-<h2 id="建立树形结构"><a href="#建立树形结构" class="headerlink" title="建立树形结构"></a>建立树形结构</h2><p><img src="https://gitee.com/Cedeat/cedeat-drawing-bed/raw/master/img/202202171410557.png" alt="树状数组的建立"></p>
-<p>我们在一个数组a上建立以上的树形结构，每个节点t[x]保存以x为根的子树中叶结点值的和。</p>
+<h2 id="树状数组维护区间和"><a href="#树状数组维护区间和" class="headerlink" title="树状数组维护区间和"></a>树状数组维护区间和</h2><p><img src="https://gitee.com/Cedeat/cedeat-drawing-bed/raw/master/img/202202171410557.png" alt="树状数组的建立"></p>
+<p>我们在一个数组a上建立以上的树形结构，每个节点t[x]保存<strong>以x为根的子树中叶结点值的和</strong>。</p>
 <p>t[x]节点覆盖的长度即为lowbit(x)。</p>
 <p>t[x]节点的父节点为t[x + lowbit(x)]。</p>
-<h3 id="单点修改操作"><a href="#单点修改操作" class="headerlink" title="单点修改操作"></a>单点修改操作</h3><p><img src="https://gitee.com/Cedeat/cedeat-drawing-bed/raw/master/img/202202171414883.png" alt="单点修改"></p>
+<h3 id="单点修改操作-amp-建立树状数组"><a href="#单点修改操作-amp-建立树状数组" class="headerlink" title="单点修改操作 &amp; 建立树状数组"></a>单点修改操作 &amp; 建立树状数组</h3><p><img src="https://gitee.com/Cedeat/cedeat-drawing-bed/raw/master/img/202202171414883.png" alt="单点修改"></p>
 <p>可见，我们修改一个点，也要修改其上的父节点，最坏的时间复杂度为O(logn)</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> k<span class="token punctuation">)</span><span class="token punctuation">{</span>
-	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token punctuation">;</span> x <span class="token operator">&lt;=</span> x<span class="token punctuation">;</span> x <span class="token operator">+=</span> x <span class="token operator">&amp;</span> <span class="token operator">-</span>x<span class="token punctuation">)</span> t<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">+=</span> k<span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token punctuation">;</span> x <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> x <span class="token operator">+=</span> x <span class="token operator">&amp;</span> <span class="token operator">-</span>x<span class="token punctuation">)</span> t<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">+=</span> k<span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="建立树状数组"><a href="#建立树状数组" class="headerlink" title="建立树状数组"></a>建立树状数组</h3><p>有了单点修改的操作，我们只需要在读入时对每个t[i]进行add操作即可</p>
+<h4 id="如何建立树状数组？"><a href="#如何建立树状数组？" class="headerlink" title="如何建立树状数组？"></a>如何建立树状数组？</h4><p>有了单点修改的操作，我们只需要在读入时对每个t[i]进行add操作即可</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i <span class="token operator">++</span> <span class="token punctuation">)</span><span class="token punctuation">{</span>
 	<span class="token keyword">int</span> x<span class="token punctuation">;</span>
 	cin <span class="token operator">&gt;&gt;</span> x<span class="token punctuation">;</span>
@@ -709,6 +709,58 @@
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>本篇题解图片来自<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pE41197Qj">〔manim | 算法 | 数据结构〕 完全理解并深入应用树状数组 | 支持多种动态维护区间操作 </a>  个人认为讲的很详细。</p>
+<h2 id="树状数组维护最大值"><a href="#树状数组维护最大值" class="headerlink" title="树状数组维护最大值"></a>树状数组维护最大值</h2><p>用树状数组维护最大值。同样可以让每个节点t[x]保存<strong>以x为根的子树中叶结点值的最大值</strong>，对于维护的最大值，我们同样可以进行单点修改和区间查询操作。</p>
+<h3 id="单点修改"><a href="#单点修改" class="headerlink" title="单点修改"></a>单点修改</h3><p>由之前维护区间和的单点修改操作，我们很容易想到：</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> k<span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">// 将q[x]变为k</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token punctuation">;</span> x <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> x <span class="token operator">+=</span> <span class="token function">lowbit</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span> t<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>t<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">,</span> k<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>这段代码是由前面树状数组维护区间和里单点操作修改而成，仅将t[x]+=k 变为 t[x] = max(t[x], k)。</p>
+<p>那么这段代码是否可行呢？</p>
+<p>如果我们要将这个数变大，即<strong>k &gt;= q[x]<strong>，那么这段代码是没有问题的，t[x]每次都会更新，然后往上一步步寻找。但想一下，如果</strong>k &lt; q[x]<strong>，并且q[x]恰好是t[x]覆盖范围内唯一的最大值，那么我们要将q[x]变小，其范围内最大值，即t[x]也一定会变小，但这个max操作并不会将t[x]变小，因此这样的单点修改是</strong>不可行</strong>的。</p>
+<p>唯一的方法，是连同q[x]和t[x]一起更新，不进行max操作，然后往上找相关的数继续更新。</p>
+<p><img src="https://gitee.com/Cedeat/cedeat-drawing-bed/raw/master/img/202202171410557.png" alt="例"></p>
+<p>还是该图，我们想一下，与t[8]直接相关的有几个数？</p>
+<p>很容易观察到：</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">t<span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token punctuation">{</span>a<span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">,</span> t<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span> t<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">,</span> t<span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>我们转化为二进制观察：</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">t<span class="token punctuation">[</span><span class="token number">1000</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token punctuation">{</span>a<span class="token punctuation">[</span><span class="token number">1000</span><span class="token punctuation">]</span><span class="token punctuation">,</span> t<span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">,</span> t<span class="token punctuation">[</span><span class="token number">110</span><span class="token punctuation">]</span><span class="token punctuation">,</span> t<span class="token punctuation">[</span><span class="token number">111</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>这里我们直接给出公式：</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">t<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token punctuation">{</span>q<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> t<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token function">lowbit</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token operator">/</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">^</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span> t<span class="token punctuation">[</span>i <span class="token operator">-</span> lowbit<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">/</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">^</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>t<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">2</span><span class="token operator">^</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>代码：</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">update</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> k<span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">// 将q[x]变为k</span>
+    q<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> k<span class="token punctuation">;</span> <span class="token comment">// 将原数组也改变，可加可不加</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token punctuation">;</span> x <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> x <span class="token operator">+=</span> <span class="token function">lowbit</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		t<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> k<span class="token punctuation">;</span> <span class="token comment">// 直接更新</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token function">lowbit</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span> i <span class="token operator">&lt;&lt;=</span> <span class="token number">1</span><span class="token punctuation">)</span> t<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>t<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">,</span> t<span class="token punctuation">[</span>x <span class="token operator">-</span> i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//公式</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="区间查询"><a href="#区间查询" class="headerlink" title="区间查询"></a>区间查询</h3><p>查询区间[l, r]的最大值，需要用上原数组。</p>
+<p>区间查询的过程我们主要用分类讨论解决。</p>
+<p>如果 r - lowbit(r) + 1 &gt;= l, ans = max(query(l, r - lowbit(r)), t[r]);</p>
+<p>否则 res = max(query(l, r - 1), q[r]);</p>
+<p>直接看代码吧，不难理解：</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">query</span><span class="token punctuation">(</span><span class="token keyword">int</span> l<span class="token punctuation">,</span> <span class="token keyword">int</span> r<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword">int</span> ans <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>r <span class="token operator">&gt;=</span> l<span class="token punctuation">)</span><span class="token punctuation">{</span>
+		ans <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>q<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">,</span> ans<span class="token punctuation">)</span><span class="token punctuation">,</span> r <span class="token operator">--</span> <span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token punctuation">;</span> r <span class="token operator">-</span> <span class="token function">lowbit</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span> <span class="token operator">&gt;=</span> l<span class="token punctuation">;</span> r <span class="token operator">-=</span> <span class="token function">lowbit</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">)</span> ans <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>t<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">,</span> ans<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> ans<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="尾部添数"><a href="#尾部添数" class="headerlink" title="尾部添数"></a>尾部添数</h3><p>树状数组维护最大值支持向区间尾部添加一个值。</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	q<span class="token punctuation">[</span> <span class="token operator">++</span> tot<span class="token punctuation">]</span> <span class="token operator">=</span> x<span class="token punctuation">;</span>
+    t<span class="token punctuation">[</span>tot<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>q<span class="token punctuation">[</span>tot<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token function">query</span><span class="token punctuation">(</span>tot <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">-</span> <span class="token function">lowbit</span><span class="token punctuation">(</span>tot<span class="token punctuation">)</span><span class="token punctuation">,</span> tot <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -1234,7 +1286,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">19.4k</span>
+                        class="white-color">20.1k</span>
             
             
             
