@@ -394,20 +394,20 @@
                 
                 
                 
-                <a href="/categories/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/" title="算法入门: 22">
+                <a href="/categories/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/" title="算法入门: 23">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
                             style="background-color: #F9EBEA;">算法入门
-                        <span class="tag-length">22</span>
+                        <span class="tag-length">23</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/%E7%AE%97%E6%B3%95%E8%BF%9B%E9%98%B6/" title="算法进阶: 1">
+                <a href="/categories/%E7%AE%97%E6%B3%95%E8%BF%9B%E9%98%B6/" title="算法进阶: 3">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             style="background-color: #F5EEF8;">算法进阶
-                        <span class="tag-length">1</span>
+                        <span class="tag-length">3</span>
                     </span>
                 </a>
                 
@@ -529,25 +529,26 @@ f[a] [b]表示走到a，b这一点的最大距离，因此f[a] [b]如果不为�
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/01/04/ji-shu-lei-dp/">
+                    <a href="/2022/01/05/shu-zhuang-dp/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="计数DP">
+                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="树形DP">
                             
-                            <span class="card-title">计数DP</span>
+                            <span class="card-title">树形DP</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                计数类DP整数划分可看作是完全背包问题的改版，将1~n的数看作体积，每个物品使用无限次，恰好能装满背包体积n的总方案数。
-注意初始化时，我们要求的与完全背包不同，完全背包要求最大的价值，该题要求最大的方案数，因此我们至少有一种方案，应该全部
+                                树形DP状态表示：
+树形DP的状态集合有两个f[u, 0]和f[u, 1]，分别表示所有从以u为根的子树中选择，且不选u这个点的方案，和选这个点的方案。
+首先对于f[u, 0]，因为它没有选择u这个点，因此子节点自由选择，可以由f[j , 
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-05
                             </span>
                             <span class="publish-author">
                                 
@@ -600,6 +601,57 @@ f[i][j] = max(f[i][j], f[i - 1][j - v[i]] + w[i]);
 
 
 二维版
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-04
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/" class="post-category">
+                                    算法入门
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E7%AE%97%E6%B3%95/">
+                            <span class="chip bg-color">算法</span>
+                        </a>
+                        
+                        <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
+                            <span class="chip bg-color">动态规划</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/01/04/ji-shu-lei-dp/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="计数DP">
+                            
+                            <span class="card-title">计数DP</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                计数类DP整数划分可看作是完全背包问题的改版，将1~n的数看作体积，每个物品使用无限次，恰好能装满背包体积n的总方案数。
+注意初始化时，我们要求的与完全背包不同，完全背包要求最大的价值，该题要求最大的方案数，因此我们至少有一种方案，应该全部
                             
                         </div>
                         <div class="publish-info">
@@ -996,7 +1048,7 @@ f[i][j] = min(f[i][j], f[i][k] + f[k + 1][j] +
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">22.6k</span>
+                        class="white-color">24.9k</span>
             
             
             
