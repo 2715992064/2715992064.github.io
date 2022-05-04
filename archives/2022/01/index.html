@@ -750,26 +750,20 @@ f[a] [b]表示走到a，b这一点的最大距离，因此f[a] [b]如果不为�
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/01/04/bei-bao-wen-ti/">
+                        <a href="/2022/01/04/ji-shu-lei-dp/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="背包问题">
+                                <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="计数DP">
                                 
-                                <span class="card-title">背包问题</span>
+                                <span class="card-title">计数DP</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    背包问题背包问题是一类很大的问题，很多问题都能转化成背包问题。
-01背包01背包问题的特点是所有物品仅能用一次
-状态转移方程
-f[i][j] = max(f[i][j], f[i - 1][j - v[i]] + w[i]);
-
-
-
-二维版
+                                    计数类DP整数划分可看作是完全背包问题的改版，将1~n的数看作体积，每个物品使用无限次，恰好能装满背包体积n的总方案数。
+注意初始化时，我们要求的与完全背包不同，完全背包要求最大的价值，该题要求最大的方案数，因此我们至少有一种方案，应该全部
                                 
                             </div>
                             <div class="publish-info">
@@ -818,20 +812,26 @@ f[i][j] = max(f[i][j], f[i - 1][j - v[i]] + w[i]);
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/01/04/ji-shu-lei-dp/">
+                        <a href="/2022/01/04/bei-bao-wen-ti/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="计数DP">
+                                <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="背包问题">
                                 
-                                <span class="card-title">计数DP</span>
+                                <span class="card-title">背包问题</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    计数类DP整数划分可看作是完全背包问题的改版，将1~n的数看作体积，每个物品使用无限次，恰好能装满背包体积n的总方案数。
-注意初始化时，我们要求的与完全背包不同，完全背包要求最大的价值，该题要求最大的方案数，因此我们至少有一种方案，应该全部
+                                    背包问题背包问题是一类很大的问题，很多问题都能转化成背包问题。
+01背包01背包问题的特点是所有物品仅能用一次
+状态转移方程
+f[i][j] = max(f[i][j], f[i - 1][j - v[i]] + w[i]);
+
+
+
+二维版
                                 
                             </div>
                             <div class="publish-info">

@@ -479,7 +479,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-04-30
+                    2022-05-04
                 </div>
                 
 
@@ -600,11 +600,11 @@
 
 <p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/description/1090/">1088. 旅行问题 - AcWing题库</a></p>
 <p>首先我们要考虑将环形问题化为一条区间。</p>
-<p><img src="https://gitee.com/Cedeat/cedeat-drawing-bed/raw/master/img/202204251721562.png" alt="顺时针情况"></p>
+<p><img src="https://raw.githubusercontent.com/2715992064/picture/main/202205041538492.png" alt="顺时针情况"></p>
 <p>用p[i] 表示</p>
 <p>如图，对于顺时针遍历，如果我们可以满足条件，从3走到3，那么对于所有的k，都存在s[k] - s[i] &gt;= 0，即对图中情况，都满足s[k] - s[2] &gt;= 0，即s[k] &gt;= s[2]。所以我们只需要找到一个长度为n的滑动窗口，满足窗口内的最小值满足s[min] &gt;= s[2]，所以该题就转化为了一个区间最值问题。</p>
 <p>同理逆时针</p>
-<p><img src="https://gitee.com/Cedeat/cedeat-drawing-bed/raw/master/img/202204251739814.png" alt="逆时针情况"></p>
+<p><img src="https://raw.githubusercontent.com/2715992064/picture/main/202205041541836.png" alt="逆时针情况"></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h&gt;</span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
@@ -653,7 +653,7 @@
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="滑动窗口-DP"><a href="#滑动窗口-DP" class="headerlink" title="滑动窗口+DP"></a>滑动窗口+DP</h2><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1091/">1089. 烽火传递 - AcWing题库</a></p>
-<p><img src="https://gitee.com/Cedeat/cedeat-drawing-bed/raw/master/img/202204252138551.png" alt="y总的状态计算"></p>
+<p><img src="https://raw.githubusercontent.com/2715992064/picture/main/202205041542340.png" alt="y总的状态计算"></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h&gt;</span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
@@ -681,7 +681,7 @@
 
 <p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1092/">1090. 绿色通道 - AcWing题库</a></p>
 <p>加入二分的做法。</p>
-<p><img src="https://gitee.com/Cedeat/cedeat-drawing-bed/raw/master/img/202204252210878.png" alt="二分"></p>
+<p><img src="https://raw.githubusercontent.com/2715992064/picture/main/202205041542491.png" alt="二分"></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h&gt;</span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
@@ -748,7 +748,7 @@
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="二维滑动窗口"><a href="#二维滑动窗口" class="headerlink" title="二维滑动窗口"></a>二维滑动窗口</h2><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1093/">1091. 理想的正方形 - AcWing题库</a></p>
-<p><img src="https://gitee.com/Cedeat/cedeat-drawing-bed/raw/master/img/202204261502392.png" alt="二维滑动窗口图解"></p>
+<p><img src="https://raw.githubusercontent.com/2715992064/picture/main/202205041543774.png" alt="二位滑动窗口"></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstdio&gt;</span></span>
