@@ -395,6 +395,112 @@
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2022/02/11/ou-la-han-shu/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="欧拉函数">
+                            
+                            <span class="card-title">欧拉函数</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                欧拉函数定义1~N中与N互质的数的个数称为欧拉函数，记为ϕ(N)。
+若在算数基本定理中，N = p1^a1 * p2^a2 * ….. * pm^am。
+ϕ(N) = N * (p1 - 1) / p1 * (p2 - 1) / p2 * 
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-11
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/" class="post-category">
+                                    算法入门
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E7%AE%97%E6%B3%95/">
+                            <span class="chip bg-color">算法</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/02/11/xian-xing-dp/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="线性DP">
+                            
+                            <span class="card-title">线性DP</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                线性DP数字三角形用f[i] [j]表示走到f[i] [j]的最大步数，一共只有两种走法，左上方走下来或右上方走下来，因此我们可以列出状态转移方程
+f[i][j] = f[i - 1][j - 1] + a[i][j]; //左上方走下来
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-11
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/" class="post-category">
+                                    算法入门
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E7%AE%97%E6%B3%95/">
+                            <span class="chip bg-color">算法</span>
+                        </a>
+                        
+                        <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
+                            <span class="chip bg-color">动态规划</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2022/02/05/yue-shu/">
                         <div class="card-image">
                             
@@ -779,21 +885,27 @@ f[a] [b]表示走到a，b这一点的最大距离，因此f[a] [b]如果不为�
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/01/04/ji-shu-lei-dp/">
+                    <a href="/2022/01/04/bei-bao-wen-ti/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="计数DP">
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="背包问题">
                             
-                            <span class="card-title">计数DP</span>
+                            <span class="card-title">背包问题</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                计数类DP整数划分可看作是完全背包问题的改版，将1~n的数看作体积，每个物品使用无限次，恰好能装满背包体积n的总方案数。
-注意初始化时，我们要求的与完全背包不同，完全背包要求最大的价值，该题要求最大的方案数，因此我们至少有一种方案，应该全部
+                                背包问题背包问题是一类很大的问题，很多问题都能转化成背包问题。
+01背包01背包问题的特点是所有物品仅能用一次
+状态转移方程
+f[i][j] = max(f[i][j], f[i - 1][j - v[i]] + w[i]);
+
+
+
+二维版
                             
                         </div>
                         <div class="publish-info">
@@ -833,27 +945,21 @@ f[a] [b]表示走到a，b这一点的最大距离，因此f[a] [b]如果不为�
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/01/04/bei-bao-wen-ti/">
+                    <a href="/2022/01/04/ji-shu-lei-dp/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="背包问题">
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="计数DP">
                             
-                            <span class="card-title">背包问题</span>
+                            <span class="card-title">计数DP</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                背包问题背包问题是一类很大的问题，很多问题都能转化成背包问题。
-01背包01背包问题的特点是所有物品仅能用一次
-状态转移方程
-f[i][j] = max(f[i][j], f[i - 1][j - v[i]] + w[i]);
-
-
-
-二维版
+                                计数类DP整数划分可看作是完全背包问题的改版，将1~n的数看作体积，每个物品使用无限次，恰好能装满背包体积n的总方案数。
+注意初始化时，我们要求的与完全背包不同，完全背包要求最大的价值，该题要求最大的方案数，因此我们至少有一种方案，应该全部
                             
                         </div>
                         <div class="publish-info">
@@ -946,112 +1052,6 @@ f[i][j] = min(f[i][j], f[i][k] + f[k + 1][j] +
             </div>
               <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/24/tuo-bu-pai-xu/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="拓扑排序">
-                            
-                            <span class="card-title">拓扑排序</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                拓扑排序什么是拓扑排序？若一个由图中所有点构成的序列A没满足：对于图中的每条边(x,y)，x在A中都出现在y之前，则称A是该图中的一个拓扑排序。只适用于有向无环图（AOV网）。
-入度想要找到拓扑排序，我们要了解入度的概念：指有向图中某点作为
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/" class="post-category">
-                                    算法入门
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E7%AE%97%E6%B3%95/">
-                            <span class="chip bg-color">算法</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%9B%BE%E8%AE%BA-%E6%90%9C%E7%B4%A2/">
-                            <span class="chip bg-color">图论/搜索</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/17/dos-ming-ling/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="DOS命令">
-                            
-                            <span class="card-title">DOS命令</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                DOS命令cd 目录名  进入特定的目录
-cd\ 退回根目录
-cd .. 退回上一级
-dir 显示目录文件和子目录列表。
-md 目录名 在该目录下新建文件夹
-rd 目录名 删除特定文件夹
-del 文件名 删除特定文件
-del ***.** 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-17
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Cedeat
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%85%B6%E5%AE%83/">
-                            <span class="chip bg-color">其它</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
         </div>
     </article>
 
@@ -1102,7 +1102,7 @@ del ***.**
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">24.9k</span>
+                        class="white-color">26.7k</span>
             
             
             
