@@ -595,17 +595,17 @@
 <h2 id="query"><a href="#query" class="headerlink" title="query"></a>query</h2><p>query操作就相对直白，分为以下几步</p>
 <p>1.如果当前节点被完全包含查询区间时，那么直接返回节点值</p>
 <p>2.否则就先下传lazytag，再递归左右儿子分别求和，要注意lr和tr[u].l, tr[u].r的区别。</p>
-<pre class="line-numbers language-none"><code class="language-none">int query(int u, int l, int r)
-{
-    if (tr[u].l &gt;= l &amp;&amp; tr[u].r &lt;= r) return tr[u].sum;
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">query</span><span class="token punctuation">(</span><span class="token keyword">int</span> u<span class="token punctuation">,</span> <span class="token keyword">int</span> l<span class="token punctuation">,</span> <span class="token keyword">int</span> r<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>tr<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">.</span>l <span class="token operator">&gt;=</span> l <span class="token operator">&amp;&amp;</span> tr<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">.</span>r <span class="token operator">&lt;=</span> r<span class="token punctuation">)</span> <span class="token keyword">return</span> tr<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">.</span>sum<span class="token punctuation">;</span>
 
-    pushdown(u);
-    int mid = tr[u].l + tr[u].r &gt;&gt; 1;
-    int sum = 0;
-    if (l &lt;= mid) sum += query(u &lt;&lt; 1, l, r);
-    if (r &gt; mid) sum += query(u &lt;&lt; 1 | 1, l, r);
-    return sum;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token function">pushdown</span><span class="token punctuation">(</span>u<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> mid <span class="token operator">=</span> tr<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">.</span>l <span class="token operator">+</span> tr<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">.</span>r <span class="token operator">&gt;&gt;</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>l <span class="token operator">&lt;=</span> mid<span class="token punctuation">)</span> sum <span class="token operator">+=</span> <span class="token function">query</span><span class="token punctuation">(</span>u <span class="token operator">&lt;&lt;</span> <span class="token number">1</span><span class="token punctuation">,</span> l<span class="token punctuation">,</span> r<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>r <span class="token operator">&gt;</span> mid<span class="token punctuation">)</span> sum <span class="token operator">+=</span> <span class="token function">query</span><span class="token punctuation">(</span>u <span class="token operator">&lt;&lt;</span> <span class="token number">1</span> <span class="token operator">|</span> <span class="token number">1</span><span class="token punctuation">,</span> l<span class="token punctuation">,</span> r<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> sum<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
