@@ -394,11 +394,11 @@
                 
                 
                 
-                <a href="/categories/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/" title="算法入门: 23">
+                <a href="/categories/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/" title="算法入门: 24">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
                             style="background-color: #F9EBEA;">算法入门
-                        <span class="tag-length">23</span>
+                        <span class="tag-length">24</span>
                     </span>
                 </a>
                 
@@ -422,6 +422,57 @@
 
     <article id="articles" class="container articles">
         <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/02/04/zhi-shu/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="质数">
+                            
+                            <span class="card-title">质数</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                质数质数的判定-试除法质数的因子一定是成对出现的，因此不必枚举所有的因子，只要枚举其中较小的因子，也就是一半的因子即可。而较小因子的上限是sqrt(n)，所以只需到sqrt即可。
+#include &lt;bits/stdc++.h&gt;
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-04
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/" class="post-category">
+                                    算法入门
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E7%AE%97%E6%B3%95/">
+                            <span class="chip bg-color">算法</span>
+                        </a>
+                        
+                        <a href="/tags/%E6%95%B0%E8%AE%BA/">
+                            <span class="chip bg-color">数论</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
@@ -581,26 +632,20 @@ f[a] [b]表示走到a，b这一点的最大距离，因此f[a] [b]如果不为�
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/01/04/bei-bao-wen-ti/">
+                    <a href="/2022/01/04/ji-shu-lei-dp/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="背包问题">
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="计数DP">
                             
-                            <span class="card-title">背包问题</span>
+                            <span class="card-title">计数DP</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                背包问题背包问题是一类很大的问题，很多问题都能转化成背包问题。
-01背包01背包问题的特点是所有物品仅能用一次
-状态转移方程
-f[i][j] = max(f[i][j], f[i - 1][j - v[i]] + w[i]);
-
-
-
-二维版
+                                计数类DP整数划分可看作是完全背包问题的改版，将1~n的数看作体积，每个物品使用无限次，恰好能装满背包体积n的总方案数。
+注意初始化时，我们要求的与完全背包不同，完全背包要求最大的价值，该题要求最大的方案数，因此我们至少有一种方案，应该全部
                             
                         </div>
                         <div class="publish-info">
@@ -638,20 +683,26 @@ f[i][j] = max(f[i][j], f[i - 1][j - v[i]] + w[i]);
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/01/04/ji-shu-lei-dp/">
+                    <a href="/2022/01/04/bei-bao-wen-ti/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="计数DP">
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="背包问题">
                             
-                            <span class="card-title">计数DP</span>
+                            <span class="card-title">背包问题</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                计数类DP整数划分可看作是完全背包问题的改版，将1~n的数看作体积，每个物品使用无限次，恰好能装满背包体积n的总方案数。
-注意初始化时，我们要求的与完全背包不同，完全背包要求最大的价值，该题要求最大的方案数，因此我们至少有一种方案，应该全部
+                                背包问题背包问题是一类很大的问题，很多问题都能转化成背包问题。
+01背包01背包问题的特点是所有物品仅能用一次
+状态转移方程
+f[i][j] = max(f[i][j], f[i - 1][j - v[i]] + w[i]);
+
+
+
+二维版
                             
                         </div>
                         <div class="publish-info">
@@ -846,19 +897,20 @@ f[i][j] = min(f[i][j], f[i][k] + f[k + 1][j] +
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2021/12/16/bfs/">
+                    <a href="/2021/12/16/dfs/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="宽度优先搜索">
+                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="深度优先搜索">
                             
-                            <span class="card-title">宽度优先搜索</span>
+                            <span class="card-title">深度优先搜索</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                BFS（宽度优先搜索）宽度优先搜索最大的优势是可以搜索到最短路，然而在空间上要比DFS上大一些。BFS是一层一层向外搜索，先搜索所有距离为1的点，再搜索所有距离为2的点，以此类推，所以搜到的点是逐渐离我们越来越远的，找到的第一个即为最小，前
+                                DFS（深度优先搜索）DFS使用栈的数据结构，指对所有可能的分支进行一次搜索，优先向下走，直到不能搜索为止，当搜索到头没有路时进行回溯，或在不满足条件时剪枝，然后再次找到别的路径深入。它所找到的不一定是最短路。
+全排列问题#include 
                             
                         </div>
                         <div class="publish-info">
@@ -896,20 +948,19 @@ f[i][j] = min(f[i][j], f[i][k] + f[k + 1][j] +
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2021/12/16/dfs/">
+                    <a href="/2021/12/16/bfs/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="深度优先搜索">
+                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="宽度优先搜索">
                             
-                            <span class="card-title">深度优先搜索</span>
+                            <span class="card-title">宽度优先搜索</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                DFS（深度优先搜索）DFS使用栈的数据结构，指对所有可能的分支进行一次搜索，优先向下走，直到不能搜索为止，当搜索到头没有路时进行回溯，或在不满足条件时剪枝，然后再次找到别的路径深入。它所找到的不一定是最短路。
-全排列问题#include 
+                                BFS（宽度优先搜索）宽度优先搜索最大的优势是可以搜索到最短路，然而在空间上要比DFS上大一些。BFS是一层一层向外搜索，先搜索所有距离为1的点，再搜索所有距离为2的点，以此类推，所以搜到的点是逐渐离我们越来越远的，找到的第一个即为最小，前
                             
                         </div>
                         <div class="publish-info">
@@ -1048,7 +1099,7 @@ f[i][j] = min(f[i][j], f[i][k] + f[k + 1][j] +
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">26.7k</span>
+                        class="white-color">44.2k</span>
             
             
             
