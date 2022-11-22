@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>如何在vjudge提交洛谷题目</title>
+      <link href="/2022/11/22/ru-he-zai-vjudge-ti-jiao-luo-gu-ti-mu/"/>
+      <url>/2022/11/22/ru-he-zai-vjudge-ti-jiao-luo-gu-ti-mu/</url>
+      
+        <content type="html"><![CDATA[<p>在 vjudge 上提交洛谷题目需要绑定账号，否则就会出现下面的提示：</p><p><img src="https://raw.githubusercontent.com/2715992064/picture/main/image-20221122161628732.png" alt="在提交界面出现错误"></p><p>如何在vjudge上提交洛谷题目，开始愉快AC呢？</p><p><img src="https://raw.githubusercontent.com/2715992064/picture/main/image-20221122162046209.png" alt="提交界面"></p><p>在提交界面的Account选项中，选择upadte（此处我已经绑定了账号所以显示已有账号）</p><p><img src="https://raw.githubusercontent.com/2715992064/picture/main/image-20221122162152035.png" alt="绑定界面"></p><p>然后会显示我们需要洛谷的COOKIE。</p><p>以Edge为例，获取COOKIE需要我们打开浏览器设置，并找到”Cookie 和网站权限”这一栏。</p><p><img src="https://raw.githubusercontent.com/2715992064/picture/main/image-20221122162352457.png"></p><p>点击”管理和删除cookie和站点数据”。</p><p><img src="https://raw.githubusercontent.com/2715992064/picture/main/image-20221122162506176.png"></p><p><strong>我们需要首先对这两项进行如上设置</strong></p><p>然后点击：<img src="https://raw.githubusercontent.com/2715992064/picture/main/image-20221122162902087.png"></p><p>在右上角搜索 luogu.com.cn</p><p><img src="https://raw.githubusercontent.com/2715992064/picture/main/image-20221122162943010.png"></p><p>搜索完成后，应该会出现如下几项：</p><p><img src="https://raw.githubusercontent.com/2715992064/picture/main/image-20221122163041120.png"></p><p>如果你没有这几项，请先确保在<strong>打开”允许站点保存和储存cookie数据”这一项</strong>的前提，在洛谷注册并登录过一次。</p><p>随后我们打开这项：</p><p><img src="https://raw.githubusercontent.com/2715992064/picture/main/image-20221122163308813.png"></p><p>就能找到对应的两个id</p><p><img src="https://raw.githubusercontent.com/2715992064/picture/main/image-20221122163334583.png"></p><p>分别打开并复制它们的内容填在vjudge的绑定账户栏即可</p><p><img src="https://raw.githubusercontent.com/2715992064/picture/main/image-20221122163419198.png"></p><p>绑定结束后会出现这个标识，代表我们成功绑定洛谷账号，可以开始刷题了。</p><p><img src="https://raw.githubusercontent.com/2715992064/picture/main/image-20221122163843235.png"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ACM常用算法模板总结ver2.0</title>
       <link href="/2022/09/12/acm-algorithm/"/>
       <url>/2022/09/12/acm-algorithm/</url>
@@ -858,39 +871,6 @@
     
     
     <entry>
-      <title>404</title>
-      <link href="/404/index.html"/>
-      <url>/404/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>about</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -913,9 +893,42 @@
     
     
     <entry>
+      <title>404</title>
+      <link href="/404/index.html"/>
+      <url>/404/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>friends</title>
       <link href="/friends/index.html"/>
       <url>/friends/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
